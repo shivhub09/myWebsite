@@ -1,51 +1,89 @@
+
 {% load static %}
 
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shivam Nagori</title>
-    <link href = "{% static '/css/main.css' %}" rel="stylesheet" href="text/css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-
-</head> 
+	<title>Dennis Ivanov</title>
+	<link href="{% static '/css/main.css'  %}" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	
+</head>
 <body>
-    <div class="container">
-        <br>
-        <div class="row">
-            <div class="col-md-3">
-                <div class="card card-body"></div> 
-            </div>
-            <div class="col-md-9">
-                <div class="card card-body"></div> 
-            </div>
-        </div>
-    </div>
-    
-    <div class="container">
-        <br>
-        <div class="row">
-            <div class="col-md-6">
-                <div class="card card-body"></div> 
-            </div>
-            <div class="col-md-6">
-                <div class="card card-body"></div> 
-            </div>
-        </div>
-    </div>
+	<br>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3">
+				<div class="card card-body h-100  border-info" id="profile-wrapper">
+					<img id="profile-pic" src="{% static 'images/shivam.jpeg' %}" >
+					<hr>
+					<h4>Hi I'm Shivam!</h4>
+					<p>I love coding, doing research and I get lots of fun doing this</p>
+				</div>
+			</div>
 
-    <div class="container">
-        <br>
-        <div class="row">
-            <div class="col-md-6">
-                <div class="card card-body"></div> 
-            </div>
-            <div class="col-md-6">
-                <div class="card card-body"></div> 
-            </div>
-        </div>
-    </div>
+			<div class="col-md-9">
+				<div class="card card-body h-100  border-info">
+					<h4>My First Job as a Developer</h4>
+					<hr>
+					<p>3 months after writing my first Hello World program in my First Year of Engineering (While studying in the CSE DS department) I had convinced myself to explore more in this field of coding to learn as much developing tools I can. </p>
+
+					<p>Before I knew , I had already started learning web development , python , data structures , sql , app development , machine learning and what not.</p>
+
+					<p>From this you’ll see that I’m someone that jumps before I can talk myself out of doing something scary.</p>
+
+					<ul class="social-links">
+						<li><img class="social" src="{% static 'images/linkedin.png' %}"></li>
+						<li><img class="social" src="{% static 'images/twitter.png' %}"></li>
+					</ul>
+
+				</div>
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="card card-body h-100">
+					<h5>My Experience as a Developer</h5>
+					<hr>
+					<p>Full stack App developer at Marcos Quay</p>
+					<p>Designed, built and managed an App for the company as a sole developer. The app supported login of users and browsing of videos which are assigned by the admin of the company to the respective coaches.</p>
+					</div>
+			</div>
+
+			<div class="col-md-6">
+				<div class="card card-body h-100">
+					<h5>What I Know</h5>
+					<hr>
+					<p>Python, Django, HTML/CSS, JavaScript, HTML,CSS , Flutter , Dart ,APIs such as google maps, JavaScript charts and a whole bunch more I can’t possibly mention in one sentence! ;)</p>
+					<p>PS: Working on React and Machine Learning.</p>
+				</div>
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="card card-body h-100">
+					<h5>How I Learn</h5>
+					<hr>
+					<p>Reverse Engineer & Build Ugly Prototypes First.</p>
+
+					<p>I can learn just about anything by having a final product to tear apart piece by piece. I break the code where I need to figure out why things work the way they do. Documentation is just a reference.</p>
+				</div>
+			</div>
+
+			<div class="col-md-6">
+				<div class="card card-body h-100">
+					<h5>My Short Term Goals</h5>
+				<hr>
+				<p>After almost a year in App development and 3 months in Machine Learning, I'm now looking forward to learn and do lots of projects in django and implement my previiously build machine learning algorithms using django to built front websites for the same.</p>
+				<p>Aside from these learning and developing I am right now working with 3 committees/clubs/teams in my college where I get some refreshments and also bond with the people there. </p>
+
+				</div>
+			</div>
+		</div>
+		<br>
+	</div>
 
 
 </body>
